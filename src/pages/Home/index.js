@@ -1,12 +1,12 @@
 import React from 'react'
-import Menu from './components/Menu'
-import dadosIniciais from './data/dados_iniciais.json'
-import BannerMain from './components/BannerMain'
-import Carousel from './components/Carousel'
+import Menu from '../../components/Menu'
+import dadosIniciais from '../../data/dados_iniciais.json'
+import BannerMain from '../../components/BannerMain'
+import Carousel from '../../components/Carousel'
 
 function App() {
   return (
-    <div style={{ background: "#141414" }}>
+    <React.Fragment>
       <Menu />
 
       <BannerMain
@@ -26,7 +26,7 @@ function App() {
       <Carousel ignoreFirstVideo category={dadosIniciais.categorias[4]} />
 
       <Carousel ignoreFirstVideo category={dadosIniciais.categorias[5]} />
-    </div>
+    </React.Fragment>
   )
 }
 
